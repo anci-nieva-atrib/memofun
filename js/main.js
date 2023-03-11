@@ -1,14 +1,13 @@
-//Variables que formaran parte de la creacion del boton visible cuando el usuario hace click
+//Variables
 let cardConImagenVisible = 0;
 let primeraCardPresionada = null;
 let segundaCardPresionada = null;
 let imagenPrimeraCard = null;
 let imagenSegundaCard = null;
 
-
-
-//Variables para comunicar y sumar los intentos
 let intentos = 0;
+let coincidencias = 0;
+
 
 let totalIntentosNivel1 = null;
 let totalIntentosNivel2 = null;
@@ -19,18 +18,9 @@ let intentosTotalesNivel2;
 let intentosTotalesNivel3;
 
 
-
-//Variable para acumular coincidencias
-let coincidencias = 0;
-
-
-
-//Variable que se incorpora a las URL de las imágenes que se imprimen en las cards, según la temática seleccionada
 let tematicaSeleccionada;
 
 
-
-//Tomar desde HTML los elementos para imprimir resultados
 let actualizarNumeroDeCoincidencias = document.querySelector("#resultadosCoincidencias");
 let actualizarNumeroDeIntentos = document.querySelector("#resultadosIntentos");
 let puntosObtenidosPorNivel = document.querySelector("#puntosAcumulados");
@@ -168,7 +158,7 @@ function imprimirIntentosRealizadosUltimaVez(numeroNivel){
 
 
 
-//Funcion para limpiar local storage completamente
+
 function limpiarTodosLosPuntosLocalStorage(){
     sumaPuntosTotales = [];
     localStorage.setItem("puntosObtenidos", JSON.stringify(sumaPuntosTotales));
@@ -203,6 +193,7 @@ function controlarPuntajeInicialNivel3(){
 
     localStorage.setItem("puntosObtenidos", JSON.stringify(sumaPuntosTotales));
 }
+
 
 
 

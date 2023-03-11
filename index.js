@@ -4,7 +4,7 @@ const arrayDeTematicas = []
 
 
 //Tomo desde JSON local las tematicas para guardarlas en el array de temáticas e imprimirlas en el HTML del inicio
-fetch("/json/tematicas.json")
+fetch("./json/tematicas.json")
 
     .then((response) => response.json())
     .then((data) => {

@@ -1,0 +1,88 @@
+//mixin texto
+
+@mixin texto__SLWA ($fontsize, $interlineado, $peso, $alineacion){
+    font-size: $fontsize;
+    line-height: $interlineado;
+    font-weight: $peso;
+    text-align: $alineacion;
+}
+
+@mixin texto__SW ($fontsize, $peso){
+    font-size: $fontsize;
+    font-weight: $peso;
+}
+
+@mixin texto__WA ($peso, $alineacion){
+    font-weight: $peso;
+    text-align: $alineacion;
+}
+
+@mixin texto__SWA ($fontsize, $peso, $alineacion){
+    font-size: $fontsize;
+    font-weight: $peso;
+    text-align: $alineacion;
+}
+
+
+
+
+//mixin flex
+@mixin flex__J ($flex, $justify){
+    display: $flex;
+    justify-content: $justify;
+}
+
+@mixin flex__JA ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin flex__D ($flex, $direction){
+    display: $flex;
+    flex-direction: $direction;
+}
+
+@mixin flex__JD ($flex, $justify, $direction){
+    display: $flex;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+
+@mixin flex__JDA ($flex, $justify, $direction, $align){
+    display: $flex;
+    justify-content: $justify;
+    flex-direction: $direction;
+    align-items: $align;
+}
+
+@mixin flex__DA ($flex, $direction, $align){
+    display: $flex;
+    flex-direction: $direction;
+    align-items: $align;
+}
+
+
+
+
+
+
+
+//display, align items, flex direction
+
+
+//display, flex direction, justify content
+
+
+//display, flex direction, justify content, aligght content
+
+
+//display, justify content
+//display, flex direction
+//display, justify content, align items
+
+//font weith, font size, text align, line height
+//font weith, font size, text align
+//font weith, font size
+//fonw weght, text align
+

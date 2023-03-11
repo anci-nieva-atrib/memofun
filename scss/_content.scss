@@ -1,0 +1,394 @@
+*{
+    margin: $margin__0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.bg__violeta{
+    background-color: $main__color;
+}
+
+.contenido__inicio{
+    font-family: $tipografia;
+    text-decoration: none;
+    width: $w__100;
+    @include flex__DA (flex, column, center);
+}
+
+.logo__blanco{
+    width: 480px;
+    height: 128px;
+    margin-top: $margin__T--126;
+}
+
+.texto__inicio{
+    font-family: $tipografia;
+    @include texto__SLWA ($texto__M, $interlinea__2--8, $texto__light, left);
+    color: $white__color;
+}
+
+.logo{
+    width: 250px;
+}
+
+.btn__icono{
+    width: 48px;
+    padding-right: $padding__R--16;
+}
+
+.footer__texto{
+    font-family: $tipografia;
+    @include texto__SWA ($texto__Xs, $texto__light, left);
+    width: $w__100;
+    color: $white__color;
+    letter-spacing: $letter__spacing-005;
+};
+
+.footer__iconos{
+    width: 24px;
+    margin: 0px 8px;
+    cursor: pointer;
+}
+
+.footer__bg--inicio{
+    margin: 144px 64px 16px 64px;
+    @include flex__JD (flex, space-between, row);
+}
+
+.footer__bg--juego{
+    margin: 0px 64px 0px 64px;
+    @include flex__JD (flex, space-between, row);
+}
+
+.footer__bg--color{
+    width: $w__100;
+    background: $main__color;
+    padding: 16px 0px 40px 0px;
+    margin-top: 48px;
+}
+
+header{
+    background-color: $white__color;
+    width: $w__100;
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.2));
+    padding: 20px 64px;
+    @include flex__JDA (flex, space-between, row, center);
+}
+
+
+.header__datos{
+    @include flex__JDA(flex, center, row, center);
+    @include texto__SWA ($texto__S, $texto__regular, left);
+    font-family: $tipografia;
+    color: $gray__color-dark;
+}
+
+.header__icono{
+    padding-right: $padding__R--8;
+}
+
+.main__estructura{
+    @include flex__J (flex, left);
+    padding: 36px 0px;
+    height: 670px;
+}
+
+.resultados{
+    margin: 4px 24px 24px 64px;
+    font-family: $tipografia;
+    display: flex;
+    flex-direction: column;
+}
+
+.resultados__texto{
+    color: $main__color;
+    @include texto__SW ($texto__M, $texto__medium);
+}
+
+.resultados__finales{
+    background-color: $white__color;
+    border-radius: $border__radius--4;
+    border: 1px solid $gray__color-light;
+    width: 350px;
+    color: $main__color;
+    @include texto__WA ($texto__semibold, right);
+    margin-bottom: $margin__B--8;
+    padding: $padding__20;
+    @include flex__DA (flex, row, center);
+}
+
+.resultados__icono{
+    margin-right: $margin__R--8;
+    height: 24px;
+}
+
+.resultados__btn--violeta{
+    background: $main__color;
+    font-family: $tipografia;
+    border-radius: $border__radius--4;
+    border: 0.5px solid $main__color;
+    width: 350px;
+    height: 56px;
+    @include flex__JDA (flex, center, row, center);
+    @include texto__SWA ($texto__S, $texto__semibold, center);
+    color: $white__color;
+    margin: 24px 0px 8px 0px;
+    text-decoration: none;
+    letter-spacing: $letter__spacing--02;
+    cursor: pointer;
+}
+
+.resultados__btn--violeta:hover{
+    background: $main__color--dark;
+}
+
+.resultados__btn--celeste:hover{
+    background: rgba(164, 236, 252, 1);
+    border: 0.5px solid rgba(164, 236, 252, 1);
+}
+
+.resultados__btn--amarillo:hover{
+    background: rgba(253, 255, 159, 1);
+    border: 0.5px solid rgba(253, 255, 159, 1);
+}
+
+.resultados__btn--celeste{
+    background: $specials__color--lightBlue;
+    font-family: $tipografia;
+    color: $white__color;
+    border-radius: $border__radius--4;
+    border: 0.5px solid $specials__color--lightBlue;
+    width: 350px;
+    height: 56px;
+    @include flex__JDA (flex, center, row, center);
+    @include texto__SWA ($texto__S, $texto__semibold, center);
+    color: $main__color;
+    margin: 8px 0px;
+    text-decoration: none;
+    letter-spacing: $letter__spacing--02;
+    cursor: pointer;
+}
+
+.resultados__btn--amarillo{
+    background: $specials__color--yelow;
+    font-family: $tipografia;
+    color: $white__color;
+    border-radius: $border__radius--4;
+    border: 0.5px solid $specials__color--yelow;
+    width: 350px;
+    height: 56px;
+    @include flex__JDA (flex, center, row, center);
+    @include texto__SWA ($texto__S, $texto__semibold, center);
+    color: $main__color;
+    margin: 8px 0px;
+    text-decoration: none;
+    letter-spacing: $letter__spacing--02;
+    cursor: pointer;
+}
+
+.resultados__btn--icono{
+    padding-right: $padding__R--12;
+    height: 20px;
+}
+
+section div button{
+    width: 150px;
+    height: 150px;
+    margin: $margin__4;
+    background-color: $main__color;
+    border: 0.1px solid $main__color;
+    cursor: pointer;
+    @include flex__JA (flex, center, center);
+}
+
+section div button:hover{
+    background: $main__color--dark;
+}
+
+.estrellitas{
+    width: 50%;
+    opacity: 40%;
+}
+
+.numeroResultado{
+    margin-left: $margin__L--8;
+    @include texto__SW ($texto__L, $texto__bold);
+}
+
+#todasLasCardsNivel1{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#todasLasCardsNivel2{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#todasLasCardsNivel3{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.botonConAnimalVisible{
+    width: 150px;
+    height: 150px;
+    margin: $margin__4;
+    background-color: $white__color;
+    border: 1.5px solid $gray__color-light;
+    cursor: pointer;
+    @include flex__JA (flex, center, center);
+    padding: $padding__8;
+}
+
+#nivel{
+    background-color:$main__color--light;
+    border: 1px solid $main__color--light;
+}
+
+.botonConAnimalCoincidencia{
+    width: 150px;
+    height: 150px;
+    margin: $margin__4;
+    background-color:$specials__color--lightGreen;
+    border: 0.001px solid $specials__color--lightGreen;
+    cursor: pointer;
+    @include flex__JA (flex, center, center);
+    padding: $padding__8;
+}
+
+.swal-overlay {
+    background-color: $specials__color--green;
+}
+
+.swal-title {
+    margin: $margin__0;
+    font-family: $tipografia;
+    @include texto__SW ($texto__Xl, $texto__semibold);
+}
+  
+.swal-text {
+    font-family: $tipografia;
+    @include texto__SWA ($texto__M, $texto__regular, center);
+}
+  
+.swal-button {
+    padding: 7px 19px;
+    border-radius: $border__radius--2;
+    background-color: $main__color;
+    font-family: $tipografia;
+    @include texto__SW ($texto__Xs, $texto__medium);
+    letter-spacing: $letter__spacing--3;
+}
+
+.botonConCoincidencia{
+    width: 150px;
+    height: 150px;
+    margin: $margin__4;
+    background-color:$specials__color--lightGreen;
+    border: 0.001px solid $specials__color--lightGreen;
+    cursor: pointer;
+    @include flex__JA (flex, center, center);
+    padding: $padding__8;
+}
+
+
+.botonConImagenVisible{
+    width: 150px;
+    height: 150px;
+    margin: $margin__4;
+    background-color: $white__color;
+    border: 1.5px solid $gray__color-light;
+    cursor: pointer;
+    @include flex__JA (flex, center, center);
+    padding: $padding__8;
+}
+
+.texto__comenzar{
+    font-family: $tipografia;
+    @include texto__SLWA ($texto__Xxxl, $interlinea__4, $texto__semibold, left);
+    color: $white__color;
+    margin-bottom: $margin__B--24;
+}
+
+#contenedorBotonesTematicas{
+    width: $w__100;
+    @include flex__JD (flex, center, row);
+}
+
+.botonSeleccionTematica{
+    background-color: $white__color;
+    width: 350px;
+    height: 350px;
+    margin: 0px 12px;
+    border-radius: $border__radius--12;
+    font-family: $tipografia;
+    @include texto__SW ($texto__Xl, $texto__light);
+    color: $gray__color-dark;
+}
+
+.botonSeleccionTematica:hover{
+    background-color: $white__color;
+    width: 350px;
+    height: 350px;
+    margin: 0px 12px;
+    border-radius: $border__radius--12;
+    font-family: $tipografia;
+    @include texto__SW ($texto__Xl, $texto__light);
+    box-shadow: 0px 4px 40px -4px #00000066;
+    color: $gray__color;
+}
+
+.imgTematica{
+    width: 200px;
+    margin-bottom: $margin__B--30;
+}
+
+#botonAnimales{
+    @include flex__D (flex, column);
+}
+
+#botonComida{
+    @include flex__D (flex, column);
+}
+
+#contenedorTematicas{
+    @include flex__D (flex, row);
+    margin-top: $margin__T--64;
+}
+
+.bloqueTexto{
+    @include flex__D (flex, column);
+    width: 270px;
+    margin-right: $margin__T--64;
+}
+
+.contenedorIntentos{
+    background-color: $white__color;
+    border-radius: $border__radius--4;
+    width: 350px;
+    @include texto__SW ($texto__Xxl, $texto__semibold);
+    color: $main__color;
+    margin-bottom: $margin__B--8;
+    padding: $padding__20;
+    @include flex__D (flex, column);
+    border: 1px solid $gray__color-light;
+}
+
+#intentosRealizadosLaUltimaVez{
+    @include texto__SW ($texto__S, $texto__regular);
+    color: $gray__color;
+    margin-top: $margin__T--12;
+}
+
+.primeraFilaContenedorIntentos{
+    @include flex__D (flex, row);
+}

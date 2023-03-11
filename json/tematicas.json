@@ -1,0 +1,15 @@
+[
+    {
+    "id": 1, 
+    "tematica": "Animales",
+    "idHTML": "botonAnimales",
+    "img": "./Multimedia/Img/Animales/imgboton.png"
+    },
+
+    {
+    "id": 2, 
+    "tematica": "Comida",
+    "idHTML": "botonComida",
+    "img": "./Multimedia/Img/Comida/imgboton.png"
+    }
+]

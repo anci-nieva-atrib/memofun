@@ -1,0 +1,462 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0px;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bg__violeta {
+  background-color: rgb(96, 67, 167);
+}
+
+.contenido__inicio {
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo__blanco {
+  width: 480px;
+  height: 128px;
+  margin-top: 126px;
+}
+
+.texto__inicio {
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  font-weight: 300;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+
+.logo {
+  width: 250px;
+}
+
+.btn__icono {
+  width: 48px;
+  padding-right: 16px;
+}
+
+.footer__texto {
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-align: left;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.05rem;
+}
+
+.footer__iconos {
+  width: 24px;
+  margin: 0px 8px;
+  cursor: pointer;
+}
+
+.footer__bg--inicio {
+  margin: 144px 64px 16px 64px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.footer__bg--juego {
+  margin: 0px 64px 0px 64px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.footer__bg--color {
+  width: 100%;
+  background: rgb(96, 67, 167);
+  padding: 16px 0px 40px 0px;
+  margin-top: 48px;
+}
+
+header {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
+  padding: 20px 64px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header__datos {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: left;
+  font-family: "Inter", sans-serif;
+  color: rgb(92, 92, 92);
+}
+
+.header__icono {
+  padding-right: 8px;
+}
+
+.main__estructura {
+  display: flex;
+  justify-content: left;
+  padding: 36px 0px;
+  height: 670px;
+}
+
+.resultados {
+  margin: 4px 24px 24px 64px;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.resultados__texto {
+  color: rgb(96, 67, 167);
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.resultados__finales {
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  border: 1px solid rgb(217, 217, 217);
+  width: 350px;
+  color: rgb(96, 67, 167);
+  font-weight: 600;
+  text-align: right;
+  margin-bottom: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.resultados__icono {
+  margin-right: 8px;
+  height: 24px;
+}
+
+.resultados__btn--violeta {
+  background: rgb(96, 67, 167);
+  font-family: "Inter", sans-serif;
+  border-radius: 4px;
+  border: 0.5px solid rgb(96, 67, 167);
+  width: 350px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin: 24px 0px 8px 0px;
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+}
+
+.resultados__btn--violeta:hover {
+  background: rgb(69, 73, 164);
+}
+
+.resultados__btn--celeste:hover {
+  background: rgb(164, 236, 252);
+  border: 0.5px solid rgb(164, 236, 252);
+}
+
+.resultados__btn--amarillo:hover {
+  background: rgb(253, 255, 159);
+  border: 0.5px solid rgb(253, 255, 159);
+}
+
+.resultados__btn--celeste {
+  background: rgb(113, 222, 246);
+  font-family: "Inter", sans-serif;
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+  border: 0.5px solid rgb(113, 222, 246);
+  width: 350px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  color: rgb(96, 67, 167);
+  margin: 8px 0px;
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+}
+
+.resultados__btn--amarillo {
+  background: rgb(244, 246, 113);
+  font-family: "Inter", sans-serif;
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+  border: 0.5px solid rgb(244, 246, 113);
+  width: 350px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  color: rgb(96, 67, 167);
+  margin: 8px 0px;
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+}
+
+.resultados__btn--icono {
+  padding-right: 12px;
+  height: 20px;
+}
+
+section div button {
+  width: 150px;
+  height: 150px;
+  margin: 4px;
+  background-color: rgb(96, 67, 167);
+  border: 0.1px solid rgb(96, 67, 167);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section div button:hover {
+  background: rgb(69, 73, 164);
+}
+
+.estrellitas {
+  width: 50%;
+  opacity: 40%;
+}
+
+.numeroResultado {
+  margin-left: 8px;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+#todasLasCardsNivel1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#todasLasCardsNivel2 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+#todasLasCardsNivel3 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.botonConAnimalVisible {
+  width: 150px;
+  height: 150px;
+  margin: 4px;
+  background-color: rgb(255, 255, 255);
+  border: 1.5px solid rgb(217, 217, 217);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+#nivel {
+  background-color: rgb(237, 229, 255);
+  border: 1px solid rgb(237, 229, 255);
+}
+
+.botonConAnimalCoincidencia {
+  width: 150px;
+  height: 150px;
+  margin: 4px;
+  background-color: rgb(200, 245, 188);
+  border: 0.001px solid rgb(200, 245, 188);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.swal-overlay {
+  background-color: rgba(71, 182, 112, 0.45);
+}
+
+.swal-title {
+  margin: 0px;
+  font-family: "Inter", sans-serif;
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+
+.swal-text {
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.swal-button {
+  padding: 7px 19px;
+  border-radius: 2px;
+  background-color: rgb(96, 67, 167);
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+.botonConCoincidencia {
+  width: 150px;
+  height: 150px;
+  margin: 4px;
+  background-color: rgb(200, 245, 188);
+  border: 0.001px solid rgb(200, 245, 188);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.botonConImagenVisible {
+  width: 150px;
+  height: 150px;
+  margin: 4px;
+  background-color: rgb(255, 255, 255);
+  border: 1.5px solid rgb(217, 217, 217);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.texto__comenzar {
+  font-family: "Inter", sans-serif;
+  font-size: 3.4rem;
+  line-height: 4rem;
+  font-weight: 600;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  margin-bottom: 24px;
+}
+
+#contenedorBotonesTematicas {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.botonSeleccionTematica {
+  background-color: rgb(255, 255, 255);
+  width: 350px;
+  height: 350px;
+  margin: 0px 12px;
+  border-radius: 12px;
+  font-family: "Inter", sans-serif;
+  font-size: 2.6rem;
+  font-weight: 300;
+  color: rgb(92, 92, 92);
+}
+
+.botonSeleccionTematica:hover {
+  background-color: rgb(255, 255, 255);
+  width: 350px;
+  height: 350px;
+  margin: 0px 12px;
+  border-radius: 12px;
+  font-family: "Inter", sans-serif;
+  font-size: 2.6rem;
+  font-weight: 300;
+  box-shadow: 0px 4px 40px -4px rgba(0, 0, 0, 0.4);
+  color: rgb(124, 124, 124);
+}
+
+.imgTematica {
+  width: 200px;
+  margin-bottom: 30px;
+}
+
+#botonAnimales {
+  display: flex;
+  flex-direction: column;
+}
+
+#botonComida {
+  display: flex;
+  flex-direction: column;
+}
+
+#contenedorTematicas {
+  display: flex;
+  flex-direction: row;
+  margin-top: 64px;
+}
+
+.bloqueTexto {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  margin-right: 64px;
+}
+
+.contenedorIntentos {
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  width: 350px;
+  font-size: 3rem;
+  font-weight: 600;
+  color: rgb(96, 67, 167);
+  margin-bottom: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(217, 217, 217);
+}
+
+#intentosRealizadosLaUltimaVez {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: rgb(124, 124, 124);
+  margin-top: 12px;
+}
+
+.primeraFilaContenedorIntentos {
+  display: flex;
+  flex-direction: row;
+}/*# sourceMappingURL=main.css.map */

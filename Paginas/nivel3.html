@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../Multimedia/Logo/favicon.svg" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+
+
+    <title>Memofun tercer nivel</title>
+</head>
+<body>
+    <!-- inicia header-->
+    <header>
+        <img src="../Multimedia/Logo/logo-violeta.svg" class="logo" alt="logo memoanimals">
+        
+        <div class="header__datos">
+            <img src="../Multimedia/Iconos/diamond.svg" class="header__icono" alt="icono de diamante">
+            <p><strong>Puntos acumulados:</p>
+            <p id="puntosAcumulados" class="numeroResultado"></p>
+        </div>
+    </header>
+    <!--ends header-->
+
+    <!--inicia main-->
+    <main>
+        <article class="main__estructura">
+
+            <section class="resultados">
+                <div id="nivel" class="resultados__finales">
+                    <img src="../Multimedia/Iconos/user.svg" class="resultados__icono" alt="">
+                    <p class="resultados__texto">NIVEL 3</p>
+                </div>
+
+                <div id="coincidencias" class="resultados__finales">
+                    <img src="../Multimedia/Iconos/coincidencias.svg" class="resultados__icono" alt="">
+                    <p class="resultados__texto">Coincidencias: </p>
+                    <p id="resultadosCoincidencias" class="numeroResultado">0</p>
+                </div>
+
+                <div id="intentos" class="contenedorIntentos">
+                    <div class="primeraFilaContenedorIntentos">
+                        <img src="../Multimedia/Iconos/movimientos.svg" class="resultados__icono" alt="">
+                        <p class="resultados__texto">Intentos:</p>
+                        <p id="resultadosIntentos" class="numeroResultado">0</p>
+                    </div>
+                    <p id="intentosRealizadosLaUltimaVez"></p>
+                </div>
+
+
+                <a href="nivel3.html">
+                    <button id="botonReiniciar" class="resultados__btn--violeta"><img src="../Multimedia/Iconos/reiniciar.svg" class="resultados__btn--icono" alt="icono reiniciar"> REINICIAR</button>
+                </a>
+                
+                <a href="../index.html" id="botonVolverAjugar"></a>
+            </section>
+
+            <section id="todasLasCardsNivel3"></section>
+
+        </article>
+    </main>
+    <!--ends main-->
+
+    <!--inicia footer-->
+    <footer class="footer__bg--color">
+        <section class="footer__bg--juego">
+            <div>
+                <p class="footer__texto">Juego desarrollado con HTML5, CSS3 y Javascript por <strong> Ana Belén Nieva Atrib</strong></p>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/anci/">
+                    <img src="../multimedia/Iconos/linkedin.svg" class="footer__iconos" alt="linkedin icono">
+                </a>
+                <a href="https://www.behance.net/ancii">
+                    <img src="../multimedia/Iconos/behance.svg" class="footer__iconos" alt="behance icono">
+                </a>
+                <a href="https://github.com/anci-nieva-atrib">
+                    <img src="../multimedia/Iconos/github.svg" class="footer__iconos" alt="github icono">
+                </a>
+            </div>
+        </section>
+    </footer>
+    <!--ends footer-->
+    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/nivel3.js"></script>
+</body>
+</html>

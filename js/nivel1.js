@@ -2,20 +2,15 @@
 limpiarTodosLosPuntosLocalStorage()
 
 
-
-//Este llamado de funcion imprime los intentos realizados la ultima vez
 imprimirIntentosRealizadosUltimaVez(1)
 
 
 imprimirBotonReiniciar()
 
 
-//Array con numeros al azar, duplicandolos porque habra dos animales por numero
+//Array con numeros al azar, duplicandolos porque habra dos imagenes por numero
 let arrayAzarNivel1 = [1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8];
 
-
-
-//Desordenar el array para que nos de numeros al azar
 arrayAzarNivel1 = arrayAzarNivel1.sort(() => {
     return 0.5 - Math.random()
 });
@@ -28,12 +23,8 @@ console.log(arrayAzarNivel1) //este console log permite ver el resultado complet
 
 
 
-//Creamos la variable que tomara al contenedor de todos los botones/card que vamos a crear
 const contenedorBotonesCards = document.querySelector("#todasLasCardsNivel1");
 
-
-
-//Aqui llamamos la funcion para crear los botones que seran las card con las imagenes
 crearBotonesCards(idBotonesCardsNivel1);
 
 
@@ -76,7 +67,7 @@ function mostrarImagen(id){
 
 
 
-//Asignar accion al boton reiniciar
+
 botonReiniciar.addEventListener("click", () => {
     limpiarTodosLosPuntosLocalStorage()
 });

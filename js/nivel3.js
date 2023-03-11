@@ -96,7 +96,7 @@ function mostrarImagen(id){
             localStorage.setItem("puntosObtenidos", JSON.stringify(sumaPuntosTotales));
             localStorage.setItem("intentosRealizados3", intentosTotalesNivel3);
 
-            botonVolverAjugar.addEventListener("click", () => limpiarLocalStorage());
+            botonVolverAjugar.addEventListener("click", () => localStorage.clear());
         }
     }
 }

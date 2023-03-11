@@ -2,27 +2,19 @@
 controlarPuntajeInicialNivel2()
 
 
-
 imprimirBotonReiniciar()
 
 
-
-//Este llamado de funcion imprime los intentos realizados la ultima vez
 imprimirIntentosRealizadosUltimaVez(2)
 
 
-
-//Actualizacion puntos acumulados
 actualizarCantidadPuntosAcumulados()
 
 
 
-//Array con numeros al azar, duplicandolos porque habra dos animales por numero
+//Array con numeros al azar, duplicandolos porque habra dos imagenes por numero
 let arrayAzarNivel2 = [1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10];
 
-
-
-//Desordenar el array para que nos de numeros al azar
 arrayAzarNivel2 = arrayAzarNivel2.sort(() => {
     return 0.5 - Math.random()
 });
@@ -31,16 +23,12 @@ arrayAzarNivel2 = arrayAzarNivel2.sort(() => {
 
 //Array con numeros que seran asignados al ID de cada boton/card
 let idBotonesCardsNivel2 = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19];
-console.log(arrayAzarNivel2)  //este console log permite ver el resultado completar el nivel rápido y testear
+console.log(arrayAzarNivel2)
 
 
 
-//Creamos la variable que tomara al contenedor de todos los botones/card que vamos a crear
 const contenedorBotonesCards = document.querySelector("#todasLasCardsNivel2");
 
-
-
-//Aqui llamamos la funcion para crear los botones que seran las card con las imagenes
 crearBotonesCards(idBotonesCardsNivel2);
 
 
@@ -83,7 +71,7 @@ function mostrarImagen(id){
 
 
 
-//Asignar accion al boton reiniciar
+
 botonReiniciar.addEventListener("click", () => {
     controlarPuntajeInicialNivel2()
 });

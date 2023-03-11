@@ -34,8 +34,9 @@ let tematicaSeleccionada;
 let actualizarNumeroDeCoincidencias = document.querySelector("#resultadosCoincidencias");
 let actualizarNumeroDeIntentos = document.querySelector("#resultadosIntentos");
 let puntosObtenidosPorNivel = document.querySelector("#puntosAcumulados");
-let tematicaElegida = document.querySelector("#tematicaElegida");
 
+let tematicaElegida = document.querySelector("#tematicaElegida");
+let botonReiniciar = document.getElementById("botonReiniciar");
 
 
 //Puntos obtenidos en local storage
@@ -201,4 +202,12 @@ function controlarPuntajeInicialNivel3(){
     }
 
     localStorage.setItem("puntosObtenidos", JSON.stringify(sumaPuntosTotales));
+}
+
+
+
+function imprimirBotonReiniciar(){
+    botonReiniciar.innerHTML = `
+    <a class="resultados__btn--violeta"><img src="../Multimedia/Iconos/reiniciar.svg" class="resultados__btn--icono" alt="icono reiniciar">REINICIAR</a>
+    `;
 }

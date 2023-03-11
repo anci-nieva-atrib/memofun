@@ -3,6 +3,10 @@ controlarPuntajeInicialNivel2()
 
 
 
+imprimirBotonReiniciar()
+
+
+
 //Este llamado de funcion imprime los intentos realizados la ultima vez
 imprimirIntentosRealizadosUltimaVez(2)
 
@@ -80,10 +84,6 @@ function mostrarImagen(id){
 
 
 //Asignar accion al boton reiniciar
-const botonReiniciar = document.getElementById("botonReiniciar");
-
 botonReiniciar.addEventListener("click", () => {
     controlarPuntajeInicialNivel2()
 });
-
-

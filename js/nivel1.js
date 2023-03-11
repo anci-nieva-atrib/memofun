@@ -7,6 +7,8 @@ limpiarTodosLosPuntosLocalStorage()
 imprimirIntentosRealizadosUltimaVez(1)
 
 
+imprimirBotonReiniciar()
+
 
 //Array con numeros al azar, duplicandolos porque habra dos animales por numero
 let arrayAzarNivel1 = [1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8];
@@ -75,8 +77,6 @@ function mostrarImagen(id){
 
 
 //Asignar accion al boton reiniciar
-const botonReiniciar = document.getElementById("botonReiniciar");
-
 botonReiniciar.addEventListener("click", () => {
     limpiarTodosLosPuntosLocalStorage()
 });

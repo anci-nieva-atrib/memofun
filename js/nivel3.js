@@ -3,6 +3,10 @@ controlarPuntajeInicialNivel3()
 
 
 
+imprimirBotonReiniciar()
+
+
+
 //Este llamado de funcion imprime los intentos realizados la ultima vez
 imprimirIntentosRealizadosUltimaVez(3)
 
@@ -78,7 +82,7 @@ function mostrarImagen(id){
         if(coincidencias == 12){
             const botonVolverAjugar= document.querySelector("#botonVolverAjugar")
             botonVolverAjugar.innerHTML =`
-            <button class="resultados__btn--amarillo"><img src="../Multimedia/Iconos/empezar.svg" class="resultados__btn--icono" alt="icono siguiente nivel">JUGAR TODO DE NUEVO</button>
+            <a class="resultados__btn--amarillo"><img src="../Multimedia/Iconos/empezar.svg" class="resultados__btn--icono" alt="icono siguiente nivel">JUGAR TODO DE NUEVO</a>
             `;
             
 
@@ -105,8 +109,6 @@ function mostrarImagen(id){
 
 
 //Asignar accion al boton reiniciar
-const botonReiniciar = document.getElementById("botonReiniciar");
-
 botonReiniciar.addEventListener("click", () => {
     controlarPuntajeInicialNivel3()
 });

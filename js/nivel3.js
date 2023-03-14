@@ -95,7 +95,6 @@ function mostrarImagen(id){
 
 
 
-
 botonReiniciar.addEventListener("click", () => {
     controlarPuntajeInicialNivel3()
 });

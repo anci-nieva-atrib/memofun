@@ -19,7 +19,6 @@ arrayAzarNivel1 = arrayAzarNivel1.sort(() => {
 
 //Array con numeros que seran asignados al ID de cada boton/card
 let idBotonesCardsNivel1 = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
-console.log(arrayAzarNivel1)
 
 
 
